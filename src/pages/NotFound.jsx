@@ -5,18 +5,20 @@ import { NavLink } from "react-router-dom"
 const NotFound = () => {
     return (
       <>
-        <Layout>
-          <h1 className="font-bold text-7xl text-blue-950 text-center mb-2">
-            Sorry,Not Found Page :( 
-
-
-          </h1>
-          <a class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"><NavLink to="/"  className="text-black hover:text-slate-400">Get back Home</NavLink></a>
-        </Layout>
-        
-          
-        
-        </>
+  <Layout>
+    <div className="flex flex-col items-center justify-center ">
+      <h1 className="font-bold text-7xl text-blue-950 text-center mb-4">
+        Sorry, Not Found Page :(
+      </h1>
+      <NavLink 
+        to="/" 
+        className="bg-blue-500 hover:bg-cyan-600 text-white font-bold py-2 px-4 rounded-full inline-block"
+      >
+        Get back Home
+      </NavLink>
+    </div>
+  </Layout>
+</>
       );
     };
     
